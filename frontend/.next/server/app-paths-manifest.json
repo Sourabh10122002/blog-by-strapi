@@ -1,5 +1,1 @@
-{
-  "/posts/[slug]/page": "app/posts/[slug]/page.js",
-  "/api/proxy-image/route": "app/api/proxy-image/route.js",
-  "/page": "app/page.js"
-}
+{}
