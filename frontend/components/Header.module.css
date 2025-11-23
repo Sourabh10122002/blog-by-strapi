@@ -1,0 +1,83 @@
+.headerWrap {
+  position: fixed;
+  top: 8px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 0 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(90deg, rgba(26, 28, 34, 0.95) 0%, rgba(20, 22, 27, 0.9) 100%);
+  transition: transform .24s ease, opacity .24s ease;
+}
+
+.hidden {
+  transform: translateY(-140%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.brandText {
+  color: var(--accent);
+  font-size: 18px;
+}
+
+.links {
+  display: none;
+  gap: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.links a {
+  transition: color .2s ease;
+}
+.links a:hover {
+  color: var(--text);
+}
+@media (min-width: 768px) {
+  .links { display: flex; }
+}
+
+.cta {
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #111;
+  text-decoration: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconBtn {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(20, 22, 27, 0.6);
+  color: var(--text);
+}
